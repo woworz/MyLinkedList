@@ -1,8 +1,8 @@
 package com.my.test;
+import com.my.ArrayList.JiangArrayList;
 import com.my.LinkedList.*;
 
-import java.util.ArrayList;
-
+import java.util.Objects;
 
 public class JiangTest {
     public static void main(String[] args) {
@@ -16,6 +16,11 @@ public class JiangTest {
         test.removeFirst();
         test.pop();
         test.push("她需要的话");
-        System.out.println("Add的结果："+ test);
+        System.out.println("LinkedList的结果："+ test);
+        JiangArrayList test2 = new JiangArrayList();
+        test2.add("欧豪，我是V神");
+        test2.add(1,"但今天晚上");
+        System.out.println("ArrayList的结果："+ test2);
+        System.out.println(test2.get(0));
     }
 }
